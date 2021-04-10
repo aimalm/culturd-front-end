@@ -80,7 +80,7 @@ function SignUp() {
             axios
                 .post(`${API_URL}${API_KEY}/signup`, data)
                 .then(function(res) {
-                    window.location.replace("login");
+                    window.location.replace("/login");
                 })
                 .catch(function(res) {
                     sessionStorage.setItem("emailError", "* Someone has already registered with this email");

@@ -214,7 +214,7 @@ function App() {
               <Footer />
             </Route>
 
-            <Route path="/">
+            <Route exact path="/">
               <Home userData={userData} logOut={logOut}/>
               <Footer />
             </Route>
