@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+
+/* -- Setting some variables to color and fonts ,enz-- */
+:root {
+  --NavbarColor: rgb(133, 138, 135);
+
+  --light-turquiose: #bfede4;
+  --turquiose: #63dbc4;
+  --dark-turquiose: #3aab95;
+
+  --light-yellow: #f5e3b1;
+  --yellowish: #f5c133;
+  --dark-yellow: #9e7f1f;
+
+  --light-beige: #f4eccf;
+  --beige: #f5d98e;
+  --dark-beige: #a08c61;
+
+  --light-carol: #a89e9a;
+  --carol: #f59d87;
+  --dark-carol: #a26554;
+
+  --light-green: #cfd7bd;
+  --greenish: #86a059;
+  --dark-green: #556a3b;
+
+  --font: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: all 0.15s;
+  font-family: var(--font);
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 30px;
+  /* take the border and background-color below to change in your own class
+  border: 0.1em solid var(--yellowish);
+  background-color: var(--yellowish); */
+}
+.alert-button {
+  position: fixed;
+  animation: appear 3s 1;
+  padding: 8px 30px 10px 30px;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  border-radius: 30px;
+  /* take the info below to change in your own class
+  top: 10%;
+  right: 1%;
+  border: 0.1em solid var(--carol);
+  background-color: var(--carol);
+  color: white;*/
+}
+.pop-up-notice{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-size: 1.5rem;
+  animation: showUp 0.8s 1 ease-in-out;
+  margin: auto;
+  /* take the info below to change in your own class */
+  /* background-color: #f6f1eb;
+  width: 70%;
+  height: 80%; */
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

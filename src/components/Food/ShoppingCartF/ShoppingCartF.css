@@ -1,0 +1,227 @@
+.shopping-cart-wrapper {
+  margin-top: 6rem;
+}
+.shopping-cart-wrapper * {
+  margin: 0;
+}
+.shopping-cart-wrapper h4,
+.shopping-cart-wrapper h5,
+.shopping-cart-wrapper p,
+.cart-empty-msg {
+  color: var(--NavbarColor);
+  font-family: var(--font);
+}
+
+.back-button {
+  background-color: transparent;
+  border: none;
+  color: var(--yellowish);
+  font-size: 3rem;
+  position: absolute;
+  top: 6rem;
+  left: 1rem;
+}
+.back-button:hover {
+  color: var(--dark-carol);
+}
+
+.shopping-cart-title {
+  font-size: 3rem;
+  padding: 3rem 15rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #c0c93f 0%, #fa9726 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Train One", cursive;
+}
+
+.cart-empty-msg {
+  padding: 3rem 15rem;
+}
+
+.shopping-cart-item {
+  display: grid;
+  grid-template-columns: 15% 45% 10% 20% 10%;
+  width: 70%;
+  margin: auto;
+  padding: 1rem 0;
+
+  text-transform: uppercase;
+  color: var(--NavbarColor);
+  font-weight: 600;
+}
+
+.cart-img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-food-info {
+  text-transform: capitalize;
+}
+
+.cart-food-info h4 {
+  padding: 0.5rem 0 1rem 0;
+}
+
+.cart-quantity {
+  height: 30%;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 33% 63% 33%;
+  justify-self: center;
+}
+
+.cart-plus-button,
+.cart-minus-button {
+  background-color: transparent;
+  border: 1px solid var(--light-turquiose);
+  color: var(--dark-turquiose);
+}
+.cart-plus-button {
+  border-radius: 8px 0 0 8px;
+}
+.cart-minus-button {
+  border-radius: 0 8px 8px 0;
+}
+
+.cart-quantity-input {
+  background-color: var(--light-turquiose);
+  border: none;
+  text-align: center;
+  font-family: var(--font);
+}
+.cart-delete-button {
+  border: 1px solid var(--light-turquiose);
+  background-color: transparent;
+  color: var(--dark-turquiose);
+  height: 30%;
+  border-radius: 8px;
+}
+
+.cart-breakline {
+  border-bottom: 3px solid var(--dark-turquiose);
+  margin: 2rem 7rem;
+  color: var(--NavbarColor);
+}
+
+.cart-subtotal-container {
+  display: grid;
+  grid-template-columns: 30% 20% 50%;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.cart-checkout-button {
+  background-color: var(--greenish);
+  border: 1px solid var(--greenish);
+  width: 100%;
+}
+.cart-checkout-button:hover {
+  background-color: var(--light-green);
+  border: 1px solid var(--light-green);
+}
+
+.paypal-buttons-container {
+  background-color: #f6f1eb;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paypal-button {
+  width: 20rem;
+}
+.paypal-button-close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  color: var(--NavbarColor);
+}
+
+@media only screen and (max-width: 768px) {
+  .shopping-cart-item {
+    width: 90%;
+  }
+  .cart-food-info h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .cart-food-info p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .cart-checkout-button {
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .back-button {
+    top: 6%;
+    left: 1%;
+  }
+  .shopping-cart-title,
+  .cart-empty-msg {
+    padding: 1rem 5rem;
+  }
+  .shopping-cart-item {
+    padding: 2rem 0;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 70% 30%;
+    width: 80%;
+  }
+  .cart-food-info {
+    grid-column: 2/3;
+  }
+  .cart-delete-button {
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+    height: 50%;
+  }
+  .cart-quantity {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 4rem;
+  }
+  .cart-plus-button {
+    width: 1.5rem;
+    padding: 0;
+    padding-right: 0.5rem;
+  }
+  .cart-minus-button {
+    width: 1.5rem;
+    padding: 0;
+  }
+  .cart-delete-button {
+    width: 80%;
+    justify-self: end;
+  }
+  .cart-subtotal-container {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .cart-food-info p {
+    font-size: 0.8rem;
+  }
+  .cart-checkout-button {
+    width: auto;
+  }
+  .paypal-buttons-contrainer {
+    height: 40%;
+  }
+  .paypal-button {
+    width: auto;
+  }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+  .logo-icon{
+    width: 13%;
+    cursor: pointer;
+    
+    }
+
+    
+
+    .white{
+      background-color:white;
+      width: 100%;
+    }
+
+    
+    .nav-color{
+      color:var( --FontColor)!important;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 1rem;
+      font-size: 1.1rem;
+      font-family: 'Train One', cursive;
+      text-transform: capitalize;
+      color:var(--greenish) !important;
+    }
+      
+    .nav-color.nav-item.dropdown{
+      color:#f59d87 !important;
+    }
+    .nav-color:hover{
+      background-color:#fffffa;
+      border: 2px solid #f5e3b1;
+      border-top: 2px solid #bfede4;
+      border-bottom: 2px solid #f59d87;
+      background-size: 50% 50%;
+      border-radius: 5%;
+      font-weight: bold;
+      color: turquoise;
+      margin: auto auto;
+      
+    }
+    .nav-color:active{
+      transform: translateY(2px);
+      
+    }
+    
+    
+    .container-homepage{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    
+    /*responsive*/
+    @media screen and (max-width: 768px) {
+    .logo-icon{
+     width: 30%;
+     
+   }
+}

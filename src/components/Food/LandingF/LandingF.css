@@ -1,0 +1,320 @@
+.food-home * {
+  margin: 0;
+  padding: 0;
+}
+.food-home a:hover {
+  text-decoration: none;
+}
+
+/* search section start here */
+.home-search-container {
+  margin-top: 6rem;
+  padding: 3rem 7rem 0 7rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.home-search-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  background: linear-gradient(to right, #67ccc7 0%, #fa9726 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rightToLeft 1.5s 1;
+}
+.search-bar {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  width: 40%;
+  margin: auto;
+}
+.search-input {
+  padding: 0.5rem 1.5rem;
+  font-size: var(--font);
+  color: var(--NavbarColor);
+  border-radius: 30px;
+  border: 4px solid rgb(155, 180, 41);
+  height: 3rem;
+  text-transform: capitalize;
+}
+.search-input:focus {
+  outline: none;
+}
+.search-button {
+  background-color: transparent;
+  border: none;
+  justify-self: start;
+}
+.search-button:hover {
+  transform: scale(1.2);
+}
+
+.search-button-icon {
+  font-size: 2rem !important;
+  margin: 0 1rem;
+  color: var(--dark-yellow);
+}
+.search-button-icon:hover {
+  color: var(--yellowish);
+}
+.search-suggestion {
+  border: 0.5px solid var(--greenish);
+  border-top: none;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  width: 33%;
+  animation: slidein 1.3s 1 ease-in-out;
+  justify-self: center;
+  text-transform: capitalize;
+  border-radius: 0px 0px 30px 30px;
+  text-align: left;
+  position: absolute;
+  font-size: 0.8rem;
+}
+.search-suggestion a {
+  text-decoration: none;
+  color: var(--dark-carol);
+}
+.search-suggestion a:hover {
+  color: var(--yellowish);
+}
+
+/* new in section start here */
+.food-new {
+  background-color: var(--beige);
+  padding: 5rem 0;
+}
+.food-title-new {
+  font-size: 3rem;
+  padding: 0 7rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #c0c93f 0%, #fa9726 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Train One", cursive;
+}
+.breakline {
+  border-bottom: 3px solid rgb(136, 163, 17);
+  margin: 0 7rem;
+  padding-bottom: 0.5rem;
+}
+.random-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 2rem auto;
+  justify-content: center;
+  transition: ease-in-out;
+}
+.food-card {
+  margin: 1rem 0.5rem;
+  max-width: 18rem;
+}
+.food-card-img:hover {
+  opacity: 0.5;
+}
+.food-card-img {
+  width: 18rem;
+  height: 18rem;
+  transition: 0.5s ease;
+}
+.product-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+.food-info {
+  background-color: white;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 1rem;
+  color: rgb(80, 80, 80);
+  border: 0.5px solid var(--beige);
+  border-top: none;
+}
+.dish-name {
+  font-weight: bolder;
+  text-transform: capitalize;
+  background: linear-gradient(to right, #c2cc67d5 0%, #339689f3 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cook-info {
+  text-transform: capitalize;
+  color: var(--NavbarColor);
+}
+.star {
+  color: var(--yellowish) !important;
+}
+.more-button {
+  background-color: transparent;
+  border: none;
+}
+.more-icon {
+  color: var(--beige);
+  font-size: 2.5rem !important;
+}
+.more-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.food-list-container {
+  display: flex;
+  justify-content: center;
+}
+.food-list-link {
+  width: 30%;
+  padding: 0.8rem;
+  border: 0.1em solid var(--greenish);
+  background-color: var(--greenish);
+
+  margin: auto;
+}
+.food-list-link:hover {
+  border: 0.1em solid var(--light-green);
+  background-color: var(--light-green);
+}
+
+/* carousel style start here */
+.carousel {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 3%;
+}
+.carousel-inner {
+  border-radius: 8px;
+}
+.carousel-inner,
+.carousel-item {
+  height: 50vh;
+}
+.carousel-item img {
+  opacity: 0.8;
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+}
+
+/* how it works style start here */
+.how-it-works-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 5% 7rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #c0c93f 0%, #fa9726 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Train One", cursive;
+}
+.how-it-works {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+
+  justify-items: center;
+}
+.step-one,
+.step-two,
+.step-three {
+  border: 8px dotted var(--light-green);
+  border-radius: 50%;
+  height: 18.5rem;
+  width: 18.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: rgb(80, 80, 80);
+}
+.step-one h3,
+.step-two h3,
+.step-three h3 {
+  color: var(--yellowish);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1080px) {
+  .how-it-works {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .step-one,
+  .step-two,
+  .step-three {
+    border: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    width: 60%;
+  }
+  .random-container {
+    width: 95%;
+  }
+
+  .home-search-container {
+    padding: 1rem;
+  }
+  .search-suggestion {
+    width: 55%;
+  }
+
+  .dish-name {
+    font-size: 1rem;
+  }
+
+  .how-it-works {
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+  .step-one,
+  .step-two,
+  .step-three {
+    margin: 1rem 0;
+    border: none;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .home-search-title {
+    font-size: 1.5rem;
+  }
+  .home-search-container {
+    margin-bottom: -1rem;
+  }
+  .random-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    width: 90%;
+  }
+  .food-title-new {
+    font-size: 1.5rem;
+  }
+  .how-it-works-title {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  .how-it-works {
+    grid-template-columns: 100%;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .how-it-works {
+    padding: 0;
+  }
+}

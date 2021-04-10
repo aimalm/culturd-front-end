@@ -1,0 +1,153 @@
+.main{
+  background-image: url(../image/bg5.png);
+  background-repeat: repeat-x;
+  animation: animate 20s linear infinite;
+  font-weight: bold;
+  max-width: 100%;
+
+}
+
+.h1-list{
+  padding:100px;
+  color: var(--carol);
+ 
+}
+
+
+
+@keyframes animate {
+  from{
+      background-position: 0 0 ;
+  }to{
+      background-position: 100% 0;
+  }
+}
+
+.h1-text__list{
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Train One', cursive;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #19d1d1 0%, #fa9726 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  
+  
+}
+
+
+.main{
+    max-width: 1200px;
+    margin: 80px auto;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    
+
+  }
+
+  
+  .img-cards {
+    width: 100%;
+    object-fit: cover;
+    
+  }
+
+  .card_image{
+    justify-self: center;
+    
+
+  }
+
+
+  .cards-flex{
+    display:flex;
+    animation: rightToLeft 1.5s 1;
+
+  }
+
+
+.cards-flex_two{
+  display: flex;
+  animation: rightToLeft 1.5s 1;
+
+}
+
+.btn-listW {
+    color: #f3eaea;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+    background-color: var(--dark-turquiose);
+   
+   
+  }
+  
+  .btn-listW:hover {
+    background-color:var(--carol);
+    text-decoration: none;
+    color:teal;
+  }
+  
+  
+  .card_content {
+    padding: 1rem  ;
+    border-radius: 0.25rem;
+    display: grid;
+    grid-template-rows: 60% 10% 15% 15%;
+    overflow: hidden;
+    margin: 1rem 2rem;
+    border: 2px solid #f5e3b1;
+    border-top: 2px solid #bfede4;
+    border-bottom: 2px solid #f59d87;
+    background-color: white;
+  }
+  
+  .card_title {
+    color: #6b1919;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  
+  .card_text {
+    color: #1eac65;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+
+  /*responsive*/
+  @media screen and (max-width: 768px) {
+    .cards-flex{
+      flex-direction: column;
+    }
+    .card_content{
+      grid-template-rows: 50% 10% 25% 15%;
+    }
+    .cards-flex_two{
+      flex-direction: column;
+    }
+  }
+
+
+  @media screen and (max-width: 425px) {
+   
+    .card_content{
+      grid-template-rows: 30% 10% 45% 15%;
+    }
+    
+  }
+ 
