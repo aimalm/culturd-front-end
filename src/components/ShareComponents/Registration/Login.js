@@ -94,7 +94,7 @@ function Login() {
         setSignInError(sessionStorage.getItem("SignInError"));
         getUser();
         localStorage.removeItem("SignInError");
-        window.location.replace("/food");
+        window.location.replace("/");
       })
       .catch(function (res) {
         localStorage.setItem("SignInError", "Email or password is wrong");
