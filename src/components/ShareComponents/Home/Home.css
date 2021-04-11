@@ -130,12 +130,11 @@
 }
 .home-aboutus-link:hover {
   background-color: rgb(245, 234, 210);
-  transform: scale(1.1);
 }
 
 .home-logo-food,
 .home-logo-workshop {
-  width: 110px;
+  width: 6.5rem;
 }
 .home-logo-food {
   align-self: end;
@@ -168,10 +167,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .home-logo-food,
-  .home-logo-workshop {
-    width: 6.5rem;
-  }
+
 }
 
 @media only screen and (max-width: 426px) {

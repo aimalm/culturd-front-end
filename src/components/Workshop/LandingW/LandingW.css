@@ -73,7 +73,7 @@
   text-shadow: 0 0.1em 20px rgb(98, 170, 142),
     -0.03em -0.03em 0 rgb(76, 122, 108), -0.03em 0.08em 0 rgb(49, 160, 132);
     font-family: 'Londrina Solid', cursive;
-    animation: rightToLeft 1.5s 1;
+    animation: leftToRight 1.5s 1;
 }
     
 
@@ -164,7 +164,6 @@
   font-size: 1.3rem;
   text-transform: uppercase;
   margin: 0 150px;
-  animation: rightToLeft 1.5s 1;
 }
 
 
@@ -182,7 +181,6 @@
   text-shadow: 0 0.1em 20px rgb(159, 212, 135),
     -0.03em -0.03em 0 rgb(76, 122, 108), -0.03em 0.08em 0 rgb(49, 160, 132);
     font-family: 'Londrina Solid', cursive;
-    animation: rightToLeft 1.5s 1;
 
 }
 
@@ -331,7 +329,7 @@ color:rgb(221, 153, 114) !important;
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
   background-color: rgba(245, 198, 179, 0.904);
-  animation: rightToLeft 1.5s 1;
+  animation: leftToRight  1.5s 1;
 }
 .form-control.text-primary {
   width: 80%;

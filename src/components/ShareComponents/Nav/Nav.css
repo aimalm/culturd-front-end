@@ -19,12 +19,12 @@ img.logo-book:hover {
   background-color: #eef5b1;
   background-size: 50% 50%;
   border-radius: 5%;
-  animation: spring 300ms ease-out;
+  /* animation: spring 300ms ease-out; */
   font-weight: bold;
 }
-.nav-color:active {
+/* .nav-color:active {
   transform: translateY(4px);
-}
+} */
 .container-homepage {
   display: grid;
   grid-template-columns: auto auto;

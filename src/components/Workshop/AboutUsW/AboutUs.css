@@ -38,7 +38,7 @@
 
 .the-concept-content {
   font-size: 1.125rem;
-  animation: rightToLeft 1.5s 1;
+  /* animation: rightToLeft 1.5s 1; */
   margin-right: 2rem;
   width: 60%;
 }
