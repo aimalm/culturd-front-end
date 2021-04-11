@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ height: 15vh;
 }
 .footer-icon-container {
   width: 30%;
@@ -36,7 +37,11 @@
   font-size: 3rem;
   line-height: 1;
 }
-
+@media only screen and (max-width: 425px){
+  .footer-icon-container{
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 376px) {
   .footer {
     padding: 1rem;

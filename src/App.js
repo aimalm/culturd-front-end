@@ -186,7 +186,7 @@ function App() {
             </Route>
 
             <Route path="/about_us">
-              <MainNav />
+              {/* <MainNav /> */}
               <AboutUs />
               <Footer />
             </Route>

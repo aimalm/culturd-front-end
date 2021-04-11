@@ -2,11 +2,18 @@ import React from "react";
 import "./AboutUs.css";
 import group from "../image/group.jpg";
 import { Link } from "react-router-dom";
+import home from '../image/home.png'
+
 
 function AboutUs() {
   return (
     <div className="aboutus_main">
-      <section className="about-section">
+      <div className="about-us-arrow">
+                <Link to="/">
+                    <img src={home} className="about-us-arrow-img" alt=""/>
+                </Link>
+            </div>
+      <div className="about-section">
         <div className="container">
           <div className="row clearfix">
             <div className="content-column col-md-6 col-sm-12 col-xs-12">
@@ -48,7 +55,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
