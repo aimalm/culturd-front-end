@@ -4,7 +4,6 @@ import { axois } from "./components/Axois/Axois";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // share components
-import MainNav from "./components/ShareComponents/Nav/MainNav";
 import Home from "./components/ShareComponents/Home/Home";
 import AboutUs from "./components/ShareComponents/AboutUs/AboutUs";
 import Footer from "./components/ShareComponents/Footer/Footer";
@@ -65,10 +64,9 @@ function App() {
     if (localStorage.hasOwnProperty("userID")) {
       window.localStorage.removeItem("userID");
     }
-    setUserData([])
-    setShoppingCart([])
+    setUserData([]);
+    setShoppingCart([]);
   };
-
 
   // save shopping cart to localStorage
   useEffect(() => {
@@ -78,19 +76,12 @@ function App() {
     if (localStorage.hasOwnProperty("email")) {
       getUser(localStorage.getItem("email"));
     }
-    getAllFood()
+    getAllFood();
   }, []);
 
   useEffect(() => {
     window.localStorage.setItem("culturd", JSON.stringify(shoppingCart));
   }, [shoppingCart]);
-  // useEffect(() => {
-  //   // const getFoodOrder = async () => {
-  //   //   const response = await axois.get("/food_order").catch((err) => console.log(err));
-  //   //   setOrderData(response.data.filter(order=>order.cooker_id.includes(userData._id)))
-  //   // };
-  //   // getFoodOrder()
-  // }, [userData]);
 
   return (
     <div className="App">
@@ -140,7 +131,12 @@ function App() {
             </Route>
 
             <Route path="/food/shopping_cart">
-              <SubnavF shoppingCart={shoppingCart} userData={userData} setUserData={setUserData} logOut={logOut}/>
+              <SubnavF
+                shoppingCart={shoppingCart}
+                userData={userData}
+                setUserData={setUserData}
+                logOut={logOut}
+              />
               <ShoppingCartF
                 shoppingCart={shoppingCart}
                 setShoppingCart={setShoppingCart}
@@ -148,7 +144,12 @@ function App() {
             </Route>
 
             <Route path="/food/profile">
-              <SubnavF shoppingCart={shoppingCart} userData={userData} setUserData={setUserData} logOut={logOut}/>
+              <SubnavF
+                shoppingCart={shoppingCart}
+                userData={userData}
+                setUserData={setUserData}
+                logOut={logOut}
+              />
               <ProfileF
                 getUser={getUser}
                 dishData={dishData}
@@ -158,7 +159,12 @@ function App() {
             </Route>
 
             <Route path="/food/products">
-              <SubnavF shoppingCart={shoppingCart} userData={userData} setUserData={setUserData} logOut={logOut}/>
+              <SubnavF
+                shoppingCart={shoppingCart}
+                userData={userData}
+                setUserData={setUserData}
+                logOut={logOut}
+              />
               <ProductDetailsF
                 selectedDish={selectedDish}
                 shoppingCart={shoppingCart}
@@ -168,7 +174,12 @@ function App() {
             </Route>
 
             <Route path="/food/product_list">
-              <SubnavF shoppingCart={shoppingCart} userData={userData} setUserData={setUserData} logOut={logOut} />
+              <SubnavF
+                shoppingCart={shoppingCart}
+                userData={userData}
+                setUserData={setUserData}
+                logOut={logOut}
+              />
               <ProductListF
                 dishData={dishData}
                 setSelectedDish={setSelectedDish}
@@ -186,20 +197,28 @@ function App() {
             </Route>
 
             <Route path="/about_us">
-              {/* <MainNav /> */}
               <AboutUs />
               <Footer />
             </Route>
 
-
             <Route path="/food/about_us">
-              <SubnavF shoppingCart={shoppingCart} userData={userData} setUserData={setUserData} logOut={logOut}/>
+              <SubnavF
+                shoppingCart={shoppingCart}
+                userData={userData}
+                setUserData={setUserData}
+                logOut={logOut}
+              />
               <AboutUsF />
               <Footer />
             </Route>
 
             <Route path="/food">
-              <SubnavF shoppingCart={shoppingCart} userData={userData}  setUserData={setUserData} logOut={logOut}/>
+              <SubnavF
+                shoppingCart={shoppingCart}
+                userData={userData}
+                setUserData={setUserData}
+                logOut={logOut}
+              />
               <LandingF setSelectedDish={setSelectedDish} dishData={dishData} />
               <Footer />
             </Route>
@@ -215,7 +234,7 @@ function App() {
             </Route>
 
             <Route exact path="/">
-              <Home userData={userData} logOut={logOut}/>
+              <Home userData={userData} logOut={logOut} />
               <Footer />
             </Route>
           </Switch>

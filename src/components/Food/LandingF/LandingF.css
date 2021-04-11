@@ -303,8 +303,12 @@
   .food-title-new {
     font-size: 1.5rem;
   }
+  .food-list-link{
+    width: 60%;
+  }
   .how-it-works-title {
-    padding: 3rem 0;
+    font-size: 1.5rem;
+    padding: 3rem 1rem;
     text-align: center;
   }
   .how-it-works {
