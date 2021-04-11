@@ -73,7 +73,7 @@
   text-shadow: 0 0.1em 20px rgb(98, 170, 142),
     -0.03em -0.03em 0 rgb(76, 122, 108), -0.03em 0.08em 0 rgb(49, 160, 132);
     font-family: 'Londrina Solid', cursive;
-    animation: leftToRight 1.5s 1;
+    /* animation: leftToRight 1.5s 1; */
 }
     
 
